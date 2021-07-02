@@ -1,4 +1,10 @@
+
 variable "function_name" {
+  type = string
+  default = ""
+}
+
+variable "region_name" {
   type = string
   default = ""
 }
@@ -19,12 +25,12 @@ variable "lambda_execution_role" {
 }
 
 variable "s3_bucket" {
-  type = string
+ type = string
   default = ""
 }
 
 variable "s3_key" {
-  type = string
+ type = string
   default = ""
 }
 
