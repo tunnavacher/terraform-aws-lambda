@@ -44,6 +44,15 @@ variable "lambda_layer_name" {
   default = ""
 }
 
+variable "s3_bucket_1" {
+  type = string
+  default = ""
+}
+
+variable "s3_key_1" {
+  type = string
+  default = ""
+}
 variable "layer_runtime" {
   type = string
   default = ""
