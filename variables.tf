@@ -26,7 +26,7 @@ variable "s3_bucket" {
 
 variable "s3_key" {
  type = string
-  default = ""
+  default = s3_key
 }
 
 variable "region_name" {
