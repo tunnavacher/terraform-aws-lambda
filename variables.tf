@@ -19,6 +19,11 @@ variable "lambda_execution_role" {
   default = ""
 }
 
+variable "filename" {
+  type = string
+  default = ""
+}
+
 variable "s3_bucket" {
  type = string
   default = "landlingbucketlakeformation"
