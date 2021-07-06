@@ -4,11 +4,6 @@ variable "function_name" {
   default = ""
 }
 
-variable "region_name" {
-  type = string
-  default = ""
-}
-
 variable "lambda_handler" {
   type = string
   default = ""
