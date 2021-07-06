@@ -19,15 +19,15 @@ variable "lambda_execution_role" {
   default = ""
 }
 
-#variable "s3_bucket" {
-# type = string
- # default = ""
-#}
+variable "s3_bucket" {
+ type = string
+  default = "landlingbucketlakeformation"
+}
 
-#variable "s3_key" {
- #type = string
-#  default = ""
-#}
+variable "s3_key" {
+ type = string
+  default = "lambda_function.zip"
+}
 
 variable "region_name" {
   type = string
@@ -44,15 +44,6 @@ variable "lambda_layer_name" {
   default = ""
 }
 
-variable "s3_bucket_1" {
-  type = string
-  default = ""
-}
-
-variable "s3_key_1" {
-  type = string
-  default = ""
-}
 variable "layer_runtime" {
   type = string
   default = ""
