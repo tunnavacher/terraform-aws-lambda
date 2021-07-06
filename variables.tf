@@ -19,15 +19,15 @@ variable "lambda_execution_role" {
   default = ""
 }
 
-variable "s3_bucket" {
- type = string
-  default = ""
-}
+#variable "s3_bucket" {
+# type = string
+ # default = ""
+#}
 
-variable "s3_key" {
- type = string
-  default = s3_key
-}
+#variable "s3_key" {
+ #type = string
+#  default = ""
+#}
 
 variable "region_name" {
   type = string
