@@ -13,7 +13,7 @@ resource "aws_cloudwatch_event_rule" "lambda_trigger_after_crawler_succeded" {
 #}
 
 resource "aws_cloudwatch_event_target" "lambda_trigger_after_crawler_succeded" {
-    rule = "${aws_cloudwatch_event_rule.lambda_trigger_after_crawler_succeded}"
+    rule = "${aws_cloudwatch_event_rule.lambda_trigger_after_crawler_succeded.name}"
     target_id = var.target_id
     arn = aws_lambda_function.test_lambda.arn
 }
