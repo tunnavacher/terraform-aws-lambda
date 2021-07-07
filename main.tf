@@ -7,7 +7,7 @@ resource "aws_lambda_function" "test_lambda" {
   role = var.lambda_execution_role
  # filename = var.filename
  s3_bucket = var.s3_bucket
-s3_key = var.s3_key
+s3_key = var.key
 layers = [aws_lambda_layer_version.lambda_layer.arn]
 }
 
@@ -18,5 +18,4 @@ resource "aws_lambda_function" "crawlerstart_lambda" {
   runtime       = var.runtime
   role = var.lambda_execution_role
   filename = "lambda_function1.zip"
-  memory-size      = 256
 }
