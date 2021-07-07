@@ -29,7 +29,7 @@ variable "s3_bucket" {
   default = "landlingbucketlakeformation"
 }
 
-variable "s3_key" {
+variable "key" {
  type = string
   default = "lambda_function.zip"
 }
