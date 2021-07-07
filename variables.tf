@@ -1,10 +1,10 @@
 
-variable "function_name" {
+variable "function_name1" {
   type = string
   default = ""
 }
 
-variable "lambda_handler" {
+variable "lambda_handler1" {
   type = string
   default = ""
 }
@@ -24,20 +24,16 @@ variable "lambda_execution_role" {
   #default = ""
 #}
 
-variable "s3_bucket" {
+variable "s3_bucket1" {
  type = string
   default = "landlingbucketlakeformation"
 }
 
-variable "s3_key" {
+variable "s3_key1" {
  type = string
   default = "lambda_function.zip"
 }
 
-variable "region_name" {
-  type = string
-  default = ""
-}
 
 variable "lambda_layer_file" {
   type = string
@@ -139,3 +135,12 @@ variable "principle2" {
   default = "events.amazonaws.com"
 }
 
+variable "function_name2" {
+  type = string
+  default = ""
+}
+
+variable "lambda_handler2" {
+  type = string
+  default = ""
+}
