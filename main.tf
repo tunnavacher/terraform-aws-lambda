@@ -18,4 +18,6 @@ resource "aws_lambda_function" "crawlerstart_lambda" {
   runtime       = var.runtime
   role = var.lambda_execution_role
   #filename = var.filename
+  s3_bucket = var.s3_bucket
+s3_key = var.key1
 }
