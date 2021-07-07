@@ -17,5 +17,5 @@ resource "aws_lambda_function" "crawlerstart_lambda" {
   handler       = var.lambda_handler
   runtime       = var.runtime
   role = var.lambda_execution_role
-  filename = var.filename
+  #filename = var.filename
 }
