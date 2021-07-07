@@ -1,7 +1,11 @@
+variable "region_name" {
+  type = string
+  default = "us-east-1"
+}
 
 variable "function_name1" {
   type = string
-  default = ""
+  default = "gluejobstart"
 }
 
 variable "lambda_handler1" {
@@ -137,7 +141,7 @@ variable "principle2" {
 
 variable "function_name2" {
   type = string
-  default = ""
+  default = "crawlerstart"
 }
 
 variable "lambda_handler2" {
