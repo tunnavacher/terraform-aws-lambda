@@ -141,3 +141,8 @@ variable "function_name2" {
   type = string
   default = ""
 }
+
+variable "filename" {
+  type = string
+  default = ""
+}
