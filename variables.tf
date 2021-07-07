@@ -32,6 +32,12 @@ variable "s3_bucket" {
   default = "landlingbucketlakeformation"
 }
 
+variable "s3_bucket1" {
+  description = lambda code to start the crawler
+ type = string
+  default = ""
+}
+
 variable "key" {
  type = string
   default = "lambda_function.zip"
