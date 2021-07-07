@@ -33,11 +33,6 @@ variable "key" {
   default = "lambda_function.zip"
 }
 
-variable "region_name" {
-  type = string
-  default = ""
-}
-
 variable "lambda_layer_file" {
   type = string
   default = ""
