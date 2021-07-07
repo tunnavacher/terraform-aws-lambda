@@ -115,7 +115,7 @@ variable "source_arn" {
 
 variable "cwrulename" {
  type = string
-  default = "lambda_trigger_after_crawler_succeded"
+  default = ""
 }
 
 #variable "Schedule" {
@@ -125,22 +125,22 @@ variable "cwrulename" {
 
 variable "target_id" {
  type = string
-  default = "test_lambda"
+  default = ""
 }
 
 variable "statement_id2" {
  type = string
-  default = "AllowExecutionFromCloudWatch"
+  default = ""
 }
 
 variable "action2" {
  type = string
-  default = "lambda:InvokeFunction"
+  default = ""
 }
 
 variable "principle2" {
  type = string
-  default = "events.amazonaws.com"
+  default = ""
 }
 
 variable "function_name2" {
