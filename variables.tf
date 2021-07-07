@@ -1,4 +1,3 @@
-
 variable "function_name" {
   type = string
   default = ""
@@ -139,3 +138,7 @@ variable "principle2" {
   default = "events.amazonaws.com"
 }
 
+variable "function_name2" {
+  type = string
+  default = ""
+}
