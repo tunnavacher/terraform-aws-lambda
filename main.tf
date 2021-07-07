@@ -11,3 +11,12 @@ s3_key = var.s3_key
 layers = [aws_lambda_layer_version.lambda_layer.arn]
 }
 
+resource "aws_lambda_function" "crawlerstart_lambda" {
+  function_name = var.function_name2
+  description   = "My awesome lambda function"
+  handler       = var.lambda_handler
+  runtime       = var.runtime
+  role = var.lambda_execution_role
+  filename = "lambda_function1.zip"
+  memory-size      = 256
+}
