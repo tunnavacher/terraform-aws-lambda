@@ -115,13 +115,13 @@ variable "source_arn" {
 
 variable "cwrulename" {
  type = string
-  default = "lambda_trigger_every-five-minutes"
+  default = "lambda_trigger_after_crawler_succeded"
 }
 
-variable "Schedule" {
- type = string
-  default = "rate(5 minutes)"
-}
+#variable "Schedule" {
+ #type = string
+  #default = "rate(5 minutes)"
+#}
 
 variable "target_id" {
  type = string
