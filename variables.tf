@@ -33,7 +33,7 @@ variable "s3_bucket" {
 }
 
 variable "s3_bucket1" {
-  description = lambda code to start the crawler
+  description = "lambda code to start the crawler"
  type = string
   default = ""
 }
