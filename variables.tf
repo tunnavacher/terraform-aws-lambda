@@ -37,11 +37,6 @@ variable "key" {
   default = "lambda_function.zip"
 }
 
-variable "key1" {
- type = string
-  default = ""
-}
-
 variable "lambda_layer_file" {
   type = string
   default = ""
