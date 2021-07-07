@@ -34,7 +34,7 @@ variable "s3_bucket" {
 
 variable "key" {
  type = string
-  default = "lambda_function.zip"
+  default = ""
 }
 
 variable "lambda_layer_file" {
