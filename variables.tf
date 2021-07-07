@@ -29,12 +29,12 @@ variable "lambda_execution_role" {
 
 variable "s3_bucket" {
  type = string
-  default = ""
+  default = "landlingbucketlakeformation"
 }
 
 variable "key" {
  type = string
-  default = ""
+  default = "lambda_function.zip"
 }
 
 variable "lambda_layer_file" {
@@ -44,7 +44,7 @@ variable "lambda_layer_file" {
 
 variable "lambda_layer_name" {
   type = string
-  default = ""
+  default = "layer_name"
 }
 
 variable "layer_runtime" {
