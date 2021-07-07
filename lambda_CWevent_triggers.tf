@@ -4,7 +4,24 @@ resource "aws_cloudwatch_event_rule" "lambda_trigger_after_crawler_succeded" {
   name        = var.cwrulename
   description = "after crawler run successfully"
   #event_pattern = jsonencode("${path.module}/cloudwatch_rule.json")
-  event_pattern = file("cloudwatch_rule.json")
+   event_pattern = <<EOF
+{
+	"detail-type": [
+		"Glue Crawler State Change"
+	],
+	"source": [
+		"aws.glue"
+	],
+	"detail": {
+		"crawlerName": [
+			"crawlerlambdatest"
+		],
+		"state": [
+			"Succeeded"
+		]
+	}
+}
+EOF
 }
 
 #resource "aws_cloudwatch_event_rule" "lambda_trigger_every_five_minutes" {
