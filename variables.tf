@@ -2,7 +2,7 @@ variable "region_name" {
   type = string
   default = "us-east-1"
 }
-variable "function_name" {
+variable "function_name1" {
   type = string
   default = ""
 }
