@@ -7,7 +7,7 @@
 	],
 	"detail": {
 		"crawlerName": [
-			"MyTestCrawl"
+			"crawlerlambdatest"
 		],
 		"state": [
 			"Succeeded"
