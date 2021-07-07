@@ -142,7 +142,7 @@ variable "function_name2" {
   default = ""
 }
 
-variable "filename" {
-  type = string
-  default = ""
-}
+#variable "filename" {
+ # type = string
+#  default = ""
+#}
