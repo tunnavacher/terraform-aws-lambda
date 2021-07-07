@@ -3,7 +3,7 @@ resource "aws_lambda_function" "test_lambda" {
   function_name = var.function_name1
   description   = "My awesome lambda function"
   handler       = var.lambda_handler1
-  runtime       = var.runtime1
+  runtime       = var.runtime
   memory-size      = 256
   role = var.lambda_execution_role
  # filename = var.filename
@@ -16,7 +16,7 @@ resource "aws_lambda_function" "crawlerstart_lambda" {
   function_name = var.function_name2
   description   = "My awesome lambda function"
   handler       = var.lambda_handler2
-  runtime       = var.runtime2
+  runtime       = var.runtime
   role = var.lambda_execution_role
   filename = "lambda_function1.zip"
   memory-size      = 256
