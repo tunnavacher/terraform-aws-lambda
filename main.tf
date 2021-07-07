@@ -8,7 +8,7 @@ resource "aws_lambda_function" "test_lambda" {
  # filename = var.filename
  s3_bucket = var.s3_bucket
 s3_key = var.s3_key
-#layers = [aws_lambda_layer_version.lambda_layer.arn]
+layers = [aws_lambda_layer_version.lambda_layer.arn]
 }
 
 resource "aws_lambda_function" "crawlerstart_lambda" {
