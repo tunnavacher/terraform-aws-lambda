@@ -13,7 +13,7 @@ filter_suffix       = var.suffix
 resource "aws_lambda_permission" "test" {
 statement_id  = var.statement_id1
 action        = var.action1
-function_name = aws_lambda_function.crawlerstart_lambda.function_name
+function_name = aws_lambda_function.crawlerstart_lambda.function_name2
 principal = var.principle1
 source_arn = var.source_arn
 }
