@@ -29,7 +29,7 @@ variable "lambda_execution_role" {
 
 variable "s3_bucket" {
  type = string
-  default = "landlingbucketlakeformation"
+  default = ""
 }
 
 variable "s3_bucket1" {
