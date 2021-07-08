@@ -1,4 +1,5 @@
-# Lambda function_name
+# Lambda function to start the glue Job
+
 resource "aws_lambda_function" "test_lambda" {
   function_name = var.function_name1
   description   = "My awesome lambda function"
@@ -10,6 +11,8 @@ resource "aws_lambda_function" "test_lambda" {
 s3_key = var.key
 layers = [aws_lambda_layer_version.lambda_layer.arn]
 }
+
+# Lambda function to start the crawler
 
 resource "aws_lambda_function" "crawlerstart_lambda" {
   function_name = var.function_name2
